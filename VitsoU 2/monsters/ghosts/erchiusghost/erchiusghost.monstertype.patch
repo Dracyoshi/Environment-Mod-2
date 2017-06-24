@@ -1,0 +1,7 @@
+[
+  {
+    "op": "add",
+    "path": "/baseParameters/statusSettings/stats/erchiusImmunity",
+    "value": { "baseValue": 1 }
+  }
+]

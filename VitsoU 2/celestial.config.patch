@@ -1,0 +1,65 @@
+[
+  //Tropical
+  /*{
+    "op": "add",
+    "path": "/terrestrialHorizonGraphics/v-tropical",
+    "value": {
+      "baseImages": "/celestial/system/terrestrial/horizon/textures/v-tropical_<selector>.png",
+      "maskTextures": "/celestial/system/terrestrial/horizon/masks/temperate/<mask>_<selector>.png",
+      "maskRange": [1, 25],
+      "maskPerPlanetRange": [3, 3]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/terrestrialGraphics/v-tropical",
+    "value": {
+      "baseImages": "/celestial/system/terrestrial/biomes/v-tropical/maskie<num>.png",
+      "dynamicsImages": "/celestial/system/terrestrial/dynamics/temperate/<num>.png",
+      "dynamicsRange": [1, 30],
+      "baseCount" : 5
+    }
+  },
+  {
+    "op": "add",
+    "path": "/planetaryTypes/Tier2/baseParameters/terrestrialType/-",
+    "value": "v-tropical"
+  },
+  {
+    "op": "add",
+    "path": "/satelliteTypes/Tier2/baseParameters/terrestrialType/-",
+    "value": "v-tropical"
+  },*/
+
+  //Alpine
+  {
+    "op": "add",
+    "path": "/terrestrialHorizonGraphics/v-alpine",
+    "value": {
+      "baseImages": "/celestial/system/terrestrial/horizon/textures/v-alpine_<selector>.png",
+      "maskTextures": "/celestial/system/terrestrial/horizon/masks/temperate/<mask>_<selector>.png",
+      "maskRange": [1, 25],
+      "maskPerPlanetRange": [3, 3]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/terrestrialGraphics/v-alpine",
+    "value": {
+      "baseImages": "/celestial/system/terrestrial/biomes/v-alpine/maskie<num>.png",
+      "dynamicsImages": "/celestial/system/terrestrial/dynamics/temperate/<num>.png",
+      "dynamicsRange": [1, 30],
+      "baseCount" : 5
+    }
+  },
+  {
+    "op": "add",
+    "path": "/planetaryTypes/Tier2/baseParameters/terrestrialType/-",
+    "value": "v-alpine"
+  },
+  {
+    "op": "add",
+    "path": "/satelliteTypes/Tier2/baseParameters/terrestrialType/-",
+    "value": "v-alpine"
+  }
+]

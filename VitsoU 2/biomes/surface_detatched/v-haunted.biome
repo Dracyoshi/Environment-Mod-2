@@ -1,0 +1,247 @@
+{
+	"name" : "v-haunted",
+	"friendlyName" : "Haunted",
+
+  "spawnProfile" : {
+    "groups" : [
+      {
+        "select" : 1,
+        "pool" : [
+          [ 1.0, "oogler" ]
+        ]
+      },
+      {
+        "select" : 3,
+        "pool" : [
+          [ 0.14, "vulturecritter" ],
+          [ 0.14, "apexscabcritter" ],
+          [ 0.14, "avianscabcritter" ],
+          [ 0.14, "floranscabcritter" ],
+          [ 0.14, "humanscabcritter" ],
+          [ 0.14, "glitchscabcritter" ],
+          [ 0.14, "penguinscabcritter" ]
+        ]
+      }
+    ],
+    "monsterParameters" : {
+      "colors" : "garden"
+    }
+  },
+
+//---------------------------------------------------------------------------------------------------------------------------------------
+//Basic Settings
+//---------------------------------------------------------------------------------------------------------------------------------------
+  "hueShiftOptions" : [-30, -20, -15, -10, -5, 0, 5, 10, 15, 20, 30],
+  "mainBlock" : "dirt",
+  "subBlocks" : [ "rock14", "bonematerial" ],
+  "ores" : "surface",
+	
+//---------------------------------------------------------------------------------------------------------------------------------------
+//Surface Placeables
+//---------------------------------------------------------------------------------------------------------------------------------------
+  "surfacePlaceables" : {
+		"grassMod" : [ "savannahgrass" ],
+		"grassModDensity" : 0.8,
+		
+    "items" : [
+//------TREASURE-------------------------------------------------------------------------------------------------------------------------
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:undergroundChests",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [1, "statuspod" ] ],
+            "parameters" : { }
+          }
+        ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:surfaceCapsules",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [0.35, "capsulesmall" ], [0.35, "capsulemed" ], [0.35, "capsulebig" ] ],
+            "parameters" : { }
+          }
+        ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 2.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:scatteredSmall",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [0.25, "smashbones1" ], [0.25, "smashbones2" ], [0.25, "smashbones3" ], [0.25, "smashbones4" ] ],
+            "parameters" : { }
+          }
+        ]
+      },
+///-----FLORA-----------------------------------------------------------------------------------------------------------------------------
+      {
+        "mode" : "floor",
+        "priority" : 3.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:denseSmall",
+
+        "type" : "grass",
+        "grasses" : [ "savannahgrass" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 3.1,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:denseSmall",
+
+        "type" : "grass",
+        "grasses" : [ "crisp" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 2.1,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:denseMedium",
+
+        "type" : "bush",
+        "bushes" : [
+          {
+            "name" : "skulls",
+            "baseHueShiftMax" : 0,
+            "modHueShiftMax" : 0
+          }
+        ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1.2,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:scatteredSmall",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [0.20, "tombstone4" ], [0.20, "tombstone9" ], [0.20, "tombstone3" ], [0.20, "tombstone4" ], [0.20, "tombstone10" ] ],
+            "parameters" : { }
+          }
+        ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:scatteredLarge",
+
+        "type" : "tree",
+        "treeFoliageHueShiftMax" : 0,
+        "treeStemHueShiftMax" : 15,
+        "treeStemList" : [ "cocoa", "fleshy", "grumpy", "pine", "slimey", "spikey", "twisted" ],
+        "treeFoliageList" : [ "" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:surfaceCrops",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [1, "wildbonebooseed" ] ],
+            "parameters" : {
+              "startingStage" : 4
+            }
+          }
+        ]
+      }
+    ]
+  },
+
+//---------------------------------------------------------------------------------------------------------------------------------------
+//Underground Placeables
+//---------------------------------------------------------------------------------------------------------------------------------------
+  "undergroundPlaceables" : {
+    "items" : [
+//------TREASURE-------------------------------------------------------------------------------------------------------------------------
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:undergroundChests",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [1, "statuspod" ] ],
+            "parameters" : { }
+          }
+        ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:undergroundCapsules",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [0.35, "capsulesmall" ], [0.35, "capsulemed" ], [0.35, "capsulebig" ] ],
+            "parameters" : { }
+          }
+        ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 2.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:denseMedium",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [0.25, "smashbones1" ], [0.25, "smashbones2" ], [0.25, "smashbones3" ], [0.25, "smashbones4" ] ],
+            "parameters" : { }
+          }
+        ]
+      },
+//------FLORA----------------------------------------------------------------------------------------------------------------------------
+      {
+        "mode" : "ceiling",
+        "priority" : 2.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:denseMedium",
+
+        "type" : "tree",
+        "treeFoliageHueShiftMax" : 180,
+        "treeStemHueShiftMax" : 10,
+        "treeStemList" : [ "bone", "darkvine", "vein" ],
+        "treeFoliageList" : [ "" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 2.1,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:denseMedium",
+
+        "type" : "bush",
+        "bushes" : [
+          {
+            "name" : "skulls",
+            "baseHueShiftMax" : 0,
+            "modHueShiftMax" : 0
+          }
+        ]
+      }
+    ]
+  }
+}

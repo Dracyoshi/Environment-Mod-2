@@ -1,0 +1,43 @@
+[
+  {
+    "op" : "add",
+    "path" : "/layers/-",
+    "value" : {
+      "kind" : "foliage/forestcanopy",
+      "offset" : [0, -140],
+      "parallax" : 1.5,
+      "directives" : "?saturation=-30"
+    }
+	},
+	
+  {
+    "op" : "replace",
+    "path" : "/layers/7/kind",
+    "value" : "foliage/grassfront"
+  },
+  {
+    "op" : "replace",
+    "path" : "/layers/3/offset",
+    "value" : [0, -225]
+  },
+  {
+    "op" : "replace",
+    "path" : "/layers/5/offset",
+    "value" : [0, -225]
+  },
+  {
+    "op" : "replace",
+    "path" : "/layers/5/directives",
+    "value" : "?saturation=-15"
+  },
+  {
+    "op" : "replace",
+    "path" : "/layers/8/offset",
+    "value" : [0, -225]
+  },
+  {
+    "op" : "replace",
+    "path" : "/layers/8/directives",
+    "value" : "?saturation=-30"
+  }
+]

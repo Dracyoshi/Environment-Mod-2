@@ -1,0 +1,67 @@
+{
+  "objectName" : "v-steamprimer",
+  "colonyTags" : [],
+  "rarity" : "Common",
+  "category" : "breakable",
+  "printable" : false,
+  "smashOnBreak" : true,
+	
+  "description" : "EST",
+  "shortdescription" : "Steam",
+  "race" : "generic",
+
+  "apexDescription" : "Steam is coming from this pool.",
+  "avianDescription" : "Ahh... refreshing.",
+  "floranDescription" : "It feels ssso good.",
+  "glitchDescription" : "Cautious. Rust is my mortal enemy.",
+  "humanDescription" : "I guess I could use a short break...",
+  "hylotlDescription" : "What a beautiful hot spring.",
+  "novakidDescription" : "It's gettin' even more steamy with me in here.",
+
+	"inventoryIcon" : "capsulebigicon.png",
+  "orientations" : [
+    {
+      "image" : "v-steamprimer.png:<color>",
+      "imagePosition" : [0, 0],
+      "direction" : "left",
+      "flipImages" : true,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    },
+    {
+      "image" : "v-steamprimer.png:<color>",
+      "imagePosition" : [0, 0],
+      "direction" : "right",
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ],
+	
+  "particleEmitter" : {
+    "emissionRate" : 0.25,
+    "emissionVariance" : 0.05,
+    "pixelOrigin" : [0, 0],
+
+    "particle" : {
+      "type" : "textured",
+      "image" : "/animations/volcanopoof/volcanopoof.png",
+      "size" : 1.0,
+      "color" : [175, 175, 175, 255],
+      "destructionAction" : "fade",
+      "destructionTime" : 3,
+      "initialVelocity" : [0, 1],
+      "timeToLive" : 15,
+      "layer" : "front",
+      "position" : [2, 3],
+      "collidesForeground" : false
+    },
+    "particleVariance" : {
+      "initialVelocity" : [0.0, 3.0],
+      "position" : [1, 1],
+      "rotation" : 90,
+      "size" : 0.5
+    }
+  }
+}

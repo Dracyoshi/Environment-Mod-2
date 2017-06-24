@@ -1,0 +1,23 @@
+{
+  "materialId" : 17100,
+  "materialName" : "dirtylimestone",
+  "particleColor" : [160, 139, 117, 255],
+  "itemDrop" : "cobblestonematerial",
+  "descprition" : "Rough, unrefined stone.",
+  "shortdescription" : "Rough Stone",
+  "glitchDescription" : "Observant. These are common rough stones.",
+  "floranDescription" : "Hard rough sstoness.",
+  "novakidDescription" : "Just a buncha rocks.",
+  "health" : 16,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "dirtylimestone.png",
+    "variants" : 5,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : true,
+    "zLevel" : 1600
+  }
+}

@@ -1,0 +1,191 @@
+{
+	"name" : "v-geyser",
+	"friendlyName" : "Geyser",
+
+  "spawnProfile" : {
+    "groups" : [
+      {
+        "select" : 1,
+        "pool" : "generatedGround"
+      },
+      {
+        "select" : 3,
+        "pool" : [
+          [ 1, "bunnycommon" ],
+          [ 1, "reasonablecritter" ],
+          [ 1, "redbreastcritter" ],
+          [ 1, "yeticritter" ],
+          [ 1, "wintercritter" ],
+          [ 1, "quibblecritter" ],
+					[ 1, "cliffcritter" ],
+					[ 1, "owlcritter" ],
+					[ 1, "frozenowlcritter" ]
+        ]
+      }
+    ],
+    "monsterParameters" : {
+      "colors" : "snow"
+    }
+  },
+
+//---------------------------------------------------------------------------------------------------------------------------------------
+//Basic Settings
+//---------------------------------------------------------------------------------------------------------------------------------------
+  "mainBlock" : "dirtylimestone",
+  "subBlocks" : [ "rock12", "dirt" ],
+  "ores" : "surface",
+	
+//---------------------------------------------------------------------------------------------------------------------------------------
+//Surface Placeables
+//---------------------------------------------------------------------------------------------------------------------------------------
+  "surfacePlaceables" : {
+		"grassMod" : [ "geysergrass" ],
+		"grassModDensity" : 0.9,
+
+    "items" : [
+//------TREASURE-------------------------------------------------------------------------------------------------------------------------
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:undergroundChests",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [1, "statuspod" ] ],
+            "parameters" : { }
+          }
+        ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:surfaceCapsules",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [0.35, "capsulesmall" ], [0.35, "capsulemed" ], [0.35, "capsulebig" ] ],
+            "parameters" : { }
+          }
+        ]
+      },
+//-----FLORA-----------------------------------------------------------------------------------------------------------------------------
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:scatteredLarge",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [1, "frozenmistprimer" ] ],
+            "parameters" : { }
+          }
+        ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:moderateClumps",
+
+        "type" : "tree",
+        "treeFoliageHueShiftMax" : 180,
+        "treeStemHueShiftMax" : 15,
+        "treeStemList" : [ "snowpinetree" ],
+        "treeFoliageList" : [ "snowpine" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 3.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:denseSmall",
+
+        "type" : "grass",
+        "grasses" : [ "savannahgrass" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 2.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:scatteredLarge",
+
+        "type" : "bush",
+        "bushes" : [
+          {
+            "name" : "savannahbush",
+            "baseHueShiftMax" : 0,
+            "modHueShiftMax" : 0
+          }
+        ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:rareClumpySmall",
+
+        "type" : "bush",
+        "bushes" : [
+          {
+            "name" : "aridskeleton",
+            "baseHueShiftMax" : 0,
+            "modHueShiftMax" : 0
+          }
+        ]
+      },
+//-----MICRO DUNGEONS--------------------------------------------------------------------------------------------------------------------
+      {
+        "mode" : "floor",
+        "priority" : 1,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:mainBiomeMicrodungeon",
+
+        "type" : "microdungeon",
+        "microdungeons" : [ "v-geyser_microdungeons" ]
+      }
+    ]
+  },
+
+//---------------------------------------------------------------------------------------------------------------------------------------
+//Underground Placeables
+//---------------------------------------------------------------------------------------------------------------------------------------
+  "undergroundPlaceables" : {
+    "items" : [
+//------TREASURE-------------------------------------------------------------------------------------------------------------------------
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:undergroundChests",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [1, "statuspod" ] ],
+            "parameters" : { }
+          }
+        ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:surfaceCapsules",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [0.35, "capsulesmall" ], [0.35, "capsulemed" ], [0.35, "capsulebig" ] ],
+            "parameters" : { }
+          }
+        ]
+      }
+//-----FLORA-----------------------------------------------------------------------------------------------------------------------------
+    ]
+  }
+}

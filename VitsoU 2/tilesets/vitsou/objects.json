@@ -1,0 +1,83 @@
+{ "columns":0,
+ "margin":0,
+ "name":"vitsou\/objects",
+ "spacing":0,
+ "tilecount":3,
+ "tileheight":16,
+ "tileproperties":
+    {
+     "0":
+        {
+         "\/\/description":"Don't wanna step in those...",
+         "\/\/name":"sharpspikes",
+         "\/\/shortdescription":"Sharp Spikes",
+         "imagePositionX":"-8",
+         "imagePositionY":"0",
+         "object":"alpinegroundspike1"
+        },
+     "1":
+        {
+         "\/\/description":"Don't wanna step in those...",
+         "\/\/name":"sharpspikes",
+         "\/\/shortdescription":"Sharp Spikes",
+         "imagePositionX":"-8",
+         "imagePositionY":"0",
+         "object":"alpinegroundspike2"
+        },
+     "2":
+        {
+         "\/\/description":"Don't wanna step in those...",
+         "\/\/name":"sharpspikes",
+         "\/\/shortdescription":"Sharp Spikes",
+         "imagePositionX":"-8",
+         "imagePositionY":"0",
+         "object":"alpinegroundspike2"
+        }
+    },
+ "tilepropertytypes":
+    {
+     "0":
+        {
+         "\/\/description":"string",
+         "\/\/name":"string",
+         "\/\/shortdescription":"string",
+         "imagePositionX":"string",
+         "imagePositionY":"string",
+         "object":"string"
+        },
+     "1":
+        {
+         "\/\/description":"string",
+         "\/\/name":"string",
+         "\/\/shortdescription":"string",
+         "imagePositionX":"string",
+         "imagePositionY":"string",
+         "object":"string"
+        },
+     "2":
+        {
+         "\/\/description":"string",
+         "\/\/name":"string",
+         "\/\/shortdescription":"string",
+         "imagePositionX":"string",
+         "imagePositionY":"string",
+         "object":"string"
+        }
+    },
+ "tiles":
+    {
+     "0":
+        {
+         "image":"..\/..\/objects\/natural\/alpine\/alpinegroundspike1\/alpinegroundspike1.png"
+        },
+     "1":
+        {
+         "image":"..\/..\/objects\/natural\/alpine\/alpinegroundspike2\/alpinegroundspike2.png"
+        },
+     "2":
+        {
+         "image":"..\/..\/objects\/natural\/alpine\/alpinegroundspike3\/alpinegroundspike3.png"
+        }
+    },
+ "tilewidth":16
+}

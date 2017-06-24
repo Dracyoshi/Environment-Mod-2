@@ -1,0 +1,16 @@
+{
+  "name" : "erchiuspoison",
+  "blockingStat" : "erchiusImmunity",
+
+  "effectConfig" : {},
+  "defaultDuration" : 5,
+
+  "scripts" : [
+    "erchiuspoison.lua"
+  ],
+
+  "animationConfig" : "erchiuspoison.animation",
+
+  "label" : "Erchius Poisoning",
+  "icon" : "/interface/statuses/erchiusp.png"
+}

@@ -1,0 +1,24 @@
+{
+  "materialId" : 17101,
+  "materialName" : "redcrystal",
+  "particleColor" : [232, 85, 83, 255],
+  "itemDrop" : "redcrystalmaterial",
+  "description" : "Light seems to twist inside these red crystals.",
+  "shortdescription" : "Red Crystal Block",
+  "glitchDescription" : "Awestruck. Light appears to dance through this red crystal.",
+  "floranDescription" : "Pretty red crysstal.",
+  "novakidDescription" : "This red crystal is purdy lookin'.",
+  "footstepSound" : "/sfx/blocks/footstep_crystal.ogg",
+  "health" : 8,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "redcrystal.png",
+    "variants" : 5,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : true,
+    "zLevel" : 1570
+  }
+}

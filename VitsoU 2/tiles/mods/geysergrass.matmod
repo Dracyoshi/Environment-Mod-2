@@ -1,0 +1,15 @@
+{
+  "modId" : 17100,
+  "modName" : "geysergrass",
+  "description" : "Dead, frosted grass.",
+  "footstepSound" : "/sfx/blocks/footstep_snow.ogg",
+  "health" : 0,
+
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "geysergrass.png",
+    "variants" : 5,
+    "multiColored" : false,
+    "zLevel" : 0
+  }
+}

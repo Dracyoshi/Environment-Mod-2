@@ -1,0 +1,20 @@
+[
+	{
+		"op": "add",
+		"path": "/visitableTypeDescription/v-alpine",
+		"value": [ "An ^#92DBB4;alpine^white; paradise. My readings indicate that there are unusually large veins of coal and iron near the surface.",
+							 "The beam site is located next to some rather steep ^#92DBB4;alpine^white; mountains. High amounts of common ores can be found near the surface.",
+							 "Common ores are abundant on the surface of this ^#92DBB4;alpine^white; planet. I advise bringing some climbing equipment."
+		 ]
+	},
+	{
+		"op": "add",
+		"path": "/planetTypeNames/v-alpine",
+		"value": "Alpine"
+	},
+	{
+		"op": "add",
+		"path": "/planetTypeColors/v-alpine",
+		"value": [200, 200, 200]
+	}
+]

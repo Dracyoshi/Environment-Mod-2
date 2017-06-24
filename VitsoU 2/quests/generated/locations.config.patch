@@ -1,0 +1,57 @@
+[
+	{
+		"op" : "add",
+		"path" : "/v-alpine",
+		"value" : {
+			"alpinecampsite" : {
+				"name" : "small campsite",
+				"tags" : [ "generic", "friendly" ],
+				"range" : 600
+			}
+		}
+	},
+	{
+		"op" : "add",
+		"path" : "/v-alpine",
+		"value" : {
+			"alpinelake1" : {
+				"name" : "small pond",
+				"tags" : [ "generic", "friendly" ],
+				"range" : 600
+			}
+		}
+	},
+	{
+		"op" : "add",
+		"path" : "/v-alpine",
+		"value" : {
+			"alpinegraveyard" : {
+				"name" : "lonely graveyard",
+				"tags" : [ "generic", "friendly" ],
+				"range" : 600
+			}
+		}
+	},
+	{
+		"op" : "add",
+		"path" : "/v-alpine",
+		"value" : {
+			"alpineravine2" : {
+				"name" : "deep ravine",
+				"tags" : [ "generic", "friendly" ],
+				"range" : 600
+			}
+		}
+	},
+	{
+		"op" : "add",
+		"path" : "/v-alpine",
+		"value" : {
+			"alpineoverhang2" : {
+				"name" : "overhang",
+				"tags" : [ "generic", "friendly" ],
+				"range" : 600
+			}
+		}
+	}
+]

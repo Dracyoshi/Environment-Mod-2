@@ -1,0 +1,49 @@
+[
+  {
+    "op" : "add",
+    "path" : "/layers/-",
+    "value" : {
+      "kind" : "foliage/grassback",
+      "baseCount" : 1,
+      "offset" : [0, 0],
+      "parallax" : [8, 4],
+      "fadePercent" : 0.1
+    }
+	},
+	
+  {
+    "op" : "replace",
+    "path" : "/layers/7/kind",
+    "value" : "foliage/grassfront"
+  },
+  {
+    "op" : "replace",
+    "path" : "/layers/7/fadePercent",
+    "value" : 0.05
+  },
+  {
+    "op" : "replace",
+    "path" : "/layers/12/kind",
+    "value" : "foliage/grassback"
+  },
+  {
+    "op" : "replace",
+    "path" : "/layers/12/fadePercent",
+    "value" : 0.05
+  },
+  {
+    "op" : "replace",
+    "path" : "/layers/17/kind",
+    "value" : "grass9v"
+  },
+  {
+    "op" : "replace",
+    "path" : "/layers/19/kind",
+    "value" : "grass10"
+  },
+  {
+    "op" : "replace",
+    "path" : "/layers/19/parallax",
+    "value" : [9, 4.6]
+  }
+]

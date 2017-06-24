@@ -1,0 +1,120 @@
+{
+  "metadata" : {
+    "name" : "v-geyser_microdungeons",
+    "species" : "generic",
+    "rules" : [ ],
+		"anchor" : [ "pool1", "pool2", "pool3", "pool4", "pool5", "pool6", "pool7", "pool8", "pool9", "pool10", "pool11", "pool12", "pool13", "pool14", "pool15" ],
+    "gravity" : 80,
+    "maxRadius" : 1000000,
+    "maxParts" : 300,
+    "protected" : false
+  },
+
+  "parts" : [
+    {
+      "name" : "pool1",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "pool1.json" ]
+    },
+    {
+      "name" : "pool2",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "pool2.json" ]
+    },
+    {
+      "name" : "pool3",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "pool3.json" ]
+    },
+    {
+      "name" : "pool4",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "pool4.json" ]
+    },
+    {
+      "name" : "pool5",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "pool5.json" ]
+    },
+    {
+      "name" : "pool6",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "pool6.json" ]
+    },
+    {
+      "name" : "pool7",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "pool7.json" ]
+    },
+    {
+      "name" : "pool8",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "pool8.json" ]
+    },
+    {
+      "name" : "pool9",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "pool9.json" ]
+    },
+    {
+      "name" : "pool10",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "pool10.json" ]
+    },
+    {
+      "name" : "pool11",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "pool11.json" ]
+    },
+    {
+      "name" : "pool12",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "pool12.json" ]
+    },
+    {
+      "name" : "pool13",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "pool13.json" ]
+    },
+    {
+      "name" : "pool14",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "pool14.json" ]
+    },
+    {
+      "name" : "pool15",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "pool15.json" ]
+    }
+  ]
+}

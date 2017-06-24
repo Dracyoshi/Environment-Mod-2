@@ -1,0 +1,113 @@
+{
+  "metadata" : {
+    "name" : "v-alpine_microdungeons",
+    "species" : "generic",
+    "rules" : [ ],
+		"anchor" : [ "alpinecabinruin1", "alpineclearing1", "alpineclearing2", "alpineden1", "alpineden2", "alpinelake1", "alpinelake2", "alpineoverhang1", "alpineoverhang2", "alpineplatforming1", "alpineplatforming2", "alpineravine1", "alpineravine2" ],
+    "gravity" : 80,
+    "maxRadius" : 1000000,
+    "maxParts" : 100,
+    "protected" : false
+  },
+
+  "parts" : [
+    {
+      "name" : "alpinecabinruin1",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "alpinecabinruin1.json" ]
+    },
+    {
+      "name" : "alpinecampsite1",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "alpinecampsite1.json" ]
+    },
+    {
+      "name" : "alpineclearing1",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "alpineclearing1.json" ]
+    },
+    {
+      "name" : "alpineclearing2",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "alpineclearing2.json" ]
+    },
+    {
+      "name" : "alpineden1",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "alpineden1.json" ]
+    },
+    {
+      "name" : "alpineden2",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "alpineden2.json" ]
+    },
+    {
+      "name" : "alpinelake1",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "alpinelake1.json" ]
+    },
+    {
+      "name" : "alpinelake2",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "alpinelake2.json" ]
+    },
+    {
+      "name" : "alpineoverhang1",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "alpineoverhang1.json" ]
+    },
+    {
+      "name" : "alpineoverhang2",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "alpineoverhang2.json" ]
+    },
+    {
+      "name" : "alpineplatforming1",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "alpineplatforming1.json" ]
+    },
+    {
+      "name" : "alpineplatforming2",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "alpineplatforming2.json" ]
+    },
+    {
+      "name" : "alpineravine1",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "alpineravine1.json" ]
+    },
+    {
+      "name" : "alpineravine2",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "alpineravine2.json" ]
+    }
+  ]
+}

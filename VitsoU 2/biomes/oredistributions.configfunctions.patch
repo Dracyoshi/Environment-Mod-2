@@ -1,0 +1,7 @@
+[
+  {
+    "op" : "add",
+    "path" : "/moonSurface",
+    "value" : [ [0.5, [ [ "erchius", 0.45 ] ] ] ]
+  }
+]

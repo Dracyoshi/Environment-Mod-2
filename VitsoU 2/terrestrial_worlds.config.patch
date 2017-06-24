@@ -1,0 +1,275 @@
+[
+//Increases the size of sub-regions while decreasing the size of secondary regions
+	{
+		"op" : "replace",
+		"path" : "/planetDefaults/layerDefaults/secondaryRegionSize",
+		"value" : [0.30, 0.50]
+	},
+	{
+		"op" : "replace",
+		"path" : "/planetDefaults/layerDefaults/subRegionSize",
+		"value" : [0.30, 0.50]
+	},
+//Slightly reduces frequency of erichus fuel
+	/*{
+		"op" : "replace",
+		"path" : "/regionTypes/moonunderground/caveLiquidSeedDensityRange",
+		"value" : [3.0, 3.0]
+	},*/
+//---------------------------------------------------------------------------------------------------------------------------------------
+//Vanilla Patches & Additions
+//---------------------------------------------------------------------------------------------------------------------------------------
+	{
+		"op" : "add",
+		"path" : "/planetTypes/moon/layerDefaults",
+		"value" : {
+			"secondaryRegionCount" : [0, 1]
+		}
+	},
+	{
+		"op" : "add",
+		"path" : "/regionTypes/midnight/subRegion/-",
+		"value" : "v-haunted"
+	},
+	{
+		"op" : "add",
+		"path" : "/regionTypes/midnight/subRegion/-",
+		"value" : "bones"
+	},
+	{
+		"op" : "add",
+		"path" : "/regionTypes/scorchedcity/subRegion/-",
+		"value" : "v-haunted"
+	},
+	{
+		"op" : "add",
+		"path" : "/regionTypes/scorchedcity/subRegion/-",
+		"value" : "bones"
+	},
+//-----ALT-BIOMES--------------------------------------------------------------------------------------------------------------------
+	{
+		"op" : "add",
+		"path" : "/planetTypes/forest/layers/surface/secondaryRegions/-",
+		"value" : "v-forest-dead"
+	},
+	{
+		"op" : "add",
+		"path" : "/planetTypes/forest/layers/surface/secondaryRegions/-",
+		"value" : "v-forest-snow"
+	},
+	{
+		"op" : "add",
+		"path" : "/planetTypes/moon/layers/surface/secondaryRegions",
+		"value" : ["v-moon-water"]
+	},
+	{
+		"op" : "add",
+		"path" : "/regionTypes/garden/subRegion/-",
+		"value" : "v-garden-flowers"
+	},
+	{
+		"op" : "add",
+		"path" : "/regionTypes/garden/subRegion/-",
+		"value" : "v-garden-sandy"
+	},
+	{
+		"op" : "add",
+		"path" : "/regionTypes/garden/subRegion/-",
+		"value" : "v-garden-snow"
+	},
+
+//---------------------------------------------------------------------------------------------------------------------------------------
+//Vitsou Planetary Stuff
+//---------------------------------------------------------------------------------------------------------------------------------------
+  {
+    "op" : "add",
+    "path" : "/planetTypes/v-alpine",
+    "value" : {
+      "threatRange" : [2, 2],
+      "layers" : {
+        "surface" : {
+          "primaryRegion" : ["v-alpine"],
+          "secondaryRegions" : ["garden", "forest", "snow"],
+          "dungeons" :
+          [[1.0, "apextestfacility"], [1.0, "apexbase"], [1.0, "apexcamp"], [1.0, "apexcity"],
+          [1.0, "aviantemple"], [1.0, "aviantomb"], [1.0, "avianvillage"], [1.0, "aviannativevillage"],  [1.0, "avianairship"],
+          [4.0, "floranhuntinggrounds"], [4.0, "florancanyon"], [4.0, "floranvillagetower"], [4.0, "floranhutvillage"],
+          [1.0, "dungeoncrawler"], [1.0, "evilfortress"], [1.0, "glitchcastle"], [1.0, "glitchvillage"],
+          [1.0, "hylotlruinedcastle"], [1.0, "hylotlcity"],
+          [1.0, "humanprison"], [1.0, "humancamp"],
+          [1.0, "glitchsewer"]
+          ]
+        }
+      }
+    }
+	},
+	{
+    "op" : "add",
+    "path" : "/regionTypes/v-alpine",
+    "value" : {
+      "caveLiquid" : [ "water" ],
+      "blockSelector" : [ "remixedMountainsSurface" ],
+      "fgCaveSelector" : [ "surfaceCaves" ],
+      "bgCaveSelector" : [ "empty" ],
+      "fgOreSelector" : ["richerVeins"],
+      "bgOreSelector" : ["richerVeins"],
+      "biome" : [
+        [0, [ "v-alpine" ]]
+      ],
+      "subRegion" : ["v-geyser", "v-gemstone"] //Spring, Bioluminescence
+    }
+	},
+
+  /*{
+    "op" : "add",
+    "path" : "/planetTypes/v-tropical",
+    "value" : {
+      "threatRange" : [2, 2],
+      "layers" : {
+        "surface" : {
+          "primaryRegion" : ["v-tropical"],
+          "secondaryRegions" : ["jungle"],
+          "dungeons" :
+          [[1.0, "apextestfacility"], [1.0, "apexbase"], [1.0, "apexcamp"], [1.0, "apexcity"],
+          [1.0, "aviantemple"], [1.0, "aviantomb"], [1.0, "avianvillage"], [1.0, "aviannativevillage"],  [1.0, "avianairship"],
+          [4.0, "floranhuntinggrounds"], [4.0, "florancanyon"], [4.0, "floranvillagetower"], [4.0, "floranhutvillage"],
+          [1.0, "dungeoncrawler"], [1.0, "evilfortress"], [1.0, "glitchcastle"], [1.0, "glitchvillage"],
+          [1.0, "hylotlruinedcastle"], [1.0, "hylotlcity"],
+          [1.0, "humanprison"], [1.0, "humancamp"],
+          [1.0, "glitchsewer"]
+          ]
+        }
+      }
+    }
+	},
+	{
+    "op" : "add",
+    "path" : "/regionTypes/v-tropical",
+    "value" : {
+      "caveLiquid" : [ "water" ],
+      "blockSelector" : [ "remixedPoolsSurface" ],
+      "fgCaveSelector" : [ "surfaceCaves" ],
+      "bgCaveSelector" : [ "empty" ],
+      "biome" : [
+        [0, [ "v-tropical" ]]
+      ],
+      "subRegion" : []
+    }
+	},*/
+//-----SUB-BIOMES------------------------------------------------------------------------------------------------------------------------
+	{
+    "op" : "add",
+    "path" : "/regionTypes/v-geyser",
+    "value" : {
+      "blockSelector" : [ "remixedMildSurface" ],
+      "fgCaveSelector" : [ "surfaceCaves" ],
+      "bgCaveSelector" : [ "empty" ],
+      "biome" : [
+        [0, [ "v-geyser" ]]
+      ]
+    }
+	},
+	{
+    "op" : "add",
+    "path" : "/regionTypes/v-gemstone",
+    "value" : {
+		"caveLiquid" : [ "lava" ],
+		"caveLiquidSeedDensityRange" : [1, 2],
+		"encloseLiquids" : true,
+      "blockSelector" : [ "remixedSpikesSurface" ],
+      "fgCaveSelector" : [ "surfaceCaves" ],
+      "bgCaveSelector" : [ "empty" ],
+      "biome" : [
+        [0, [ "v-gemstone" ]]
+      ]
+    }
+	},
+	{
+    "op" : "add",
+    "path" : "/regionTypes/v-haunted",
+    "value" : {
+      "blockSelector" : [ "remixedMildSurface" ],
+      "fgCaveSelector" : [ "surfaceCaves" ],
+      "bgCaveSelector" : [ "empty" ],
+      "biome" : [
+        [0, [ "v-haunted" ]]
+      ]
+    }
+	},
+//-----ALT-BIOMES--------------------------------------------------------------------------------------------------------------------
+	{
+    "op" : "add",
+    "path" : "/regionTypes/v-forest-dead",
+    "value" : {
+      "blockSelector" : [ "remixedMildSurface" ],
+      "fgCaveSelector" : [ "surfaceCaves" ],
+      "bgCaveSelector" : [ "empty" ],
+      "biome" : [
+        [0, [ "v-forest-dead" ]]
+      ]
+    }
+	},
+	{
+    "op" : "add",
+    "path" : "/regionTypes/v-forest-snow",
+    "value" : {
+      "blockSelector" : [ "remixedMildSurface" ],
+      "fgCaveSelector" : [ "surfaceCaves" ],
+      "bgCaveSelector" : [ "empty" ],
+      "biome" : [
+        [0, [ "v-forest-snow" ]]
+      ]
+    }
+	},
+	{
+    "op" : "add",
+    "path" : "/regionTypes/v-garden-flowers",
+    "value" : {
+      "blockSelector" : [ "remixedMildSurface" ],
+      "fgCaveSelector" : [ "surfaceCaves" ],
+      "bgCaveSelector" : [ "empty" ],
+      "biome" : [
+        [0, [ "v-garden-flowers" ]]
+      ]
+    }
+	},
+	{
+    "op" : "add",
+    "path" : "/regionTypes/v-garden-sandy",
+    "value" : {
+      "blockSelector" : [ "remixedMildSurface" ],
+      "fgCaveSelector" : [ "surfaceCaves" ],
+      "bgCaveSelector" : [ "empty" ],
+      "biome" : [
+        [0, [ "v-garden-sandy" ]]
+      ]
+    }
+	},
+	{
+    "op" : "add",
+    "path" : "/regionTypes/v-garden-snow",
+    "value" : {
+      "blockSelector" : [ "remixedMildSurface" ],
+      "fgCaveSelector" : [ "surfaceCaves" ],
+      "bgCaveSelector" : [ "empty" ],
+      "biome" : [
+        [0, [ "v-garden-snow" ]]
+      ]
+    }
+	},
+	{
+    "op" : "add",
+    "path" : "/regionTypes/v-moon-water",
+    "value" : {
+      "caveLiquid" : [ "water" ],
+			"caveLiquidSeedDensityRange" : [40, 40],
+      "encloseLiquids" : true,
+      "blockSelector" : [ "remixedSurface" ],
+      "fgCaveSelector" : [ "moonSurfaceCaves" ],
+      "bgCaveSelector" : [ "empty" ],
+      "biome" : [
+        [0, [ "v-moon-water" ]]
+      ]
+    }
+	}
+]
