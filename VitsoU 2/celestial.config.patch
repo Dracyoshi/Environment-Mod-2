@@ -17,7 +17,7 @@
       "baseImages": "/celestial/system/terrestrial/biomes/v-tropical/maskie<num>.png",
       "dynamicsImages": "/celestial/system/terrestrial/dynamics/temperate/<num>.png",
       "dynamicsRange": [1, 30],
-      "baseCount" : 5
+      "baseCount" : 4
     }
   },
   {
