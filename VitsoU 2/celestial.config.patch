@@ -54,12 +54,12 @@
   },
   {
     "op": "add",
-    "path": "/planetaryTypes/Tier2/baseParameters/terrestrialType/-",
+    "path": "/planetaryTypes/Tier3/baseParameters/terrestrialType/-",
     "value": "v-alpine"
   },
   {
     "op": "add",
-    "path": "/satelliteTypes/Tier2/baseParameters/terrestrialType/-",
+    "path": "/satelliteTypes/Tier3/baseParameters/terrestrialType/-",
     "value": "v-alpine"
   }
 ]

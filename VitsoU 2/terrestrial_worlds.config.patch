@@ -85,7 +85,7 @@
     "op" : "add",
     "path" : "/planetTypes/v-alpine",
     "value" : {
-      "threatRange" : [2, 2],
+      "threatRange" : [3, 3],
       "layers" : {
         "surface" : {
           "primaryRegion" : ["v-alpine"],
