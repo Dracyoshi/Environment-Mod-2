@@ -1,0 +1,16 @@
+[
+  {
+    "op" : "add",
+    "path" : "/conifly",
+    "value" : [
+      [0, { "fill" : [{"item" : "conifly"}]}]
+    ]
+  },
+  {
+    "op" : "add",
+    "path" : "/pertle",
+    "value" : [
+      [0, { "fill" : [{"item" : "pertle"}]}]
+    ]
+  }
+]

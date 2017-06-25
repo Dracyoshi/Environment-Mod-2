@@ -1,0 +1,9 @@
+{
+  "name" : "pertle",
+  "category" : "pertle",
+  "type" : "body",
+
+  "frames" : {
+    "body" : "pertle.png"
+  }
+}

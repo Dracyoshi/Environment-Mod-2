@@ -1,0 +1,9 @@
+{
+  "name" : "conifly",
+  "category" : "conifly",
+  "type" : "body",
+
+  "frames" : {
+    "body" : "conifly.png"
+  }
+}

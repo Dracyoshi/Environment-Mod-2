@@ -1,0 +1,27 @@
+{
+  "objectName" : "pertle",
+  "colonyTags" : ["nature"],
+  "rarity" : "Common",
+  "price" : 50,
+  "printable" : false,
+  "description" : "A small bug with a rocky shell.",
+  "shortdescription" : "Pertle",
+  "race" : "generic",
+  "category" : "bug",
+  "collectablesOnPickup" : { "bugs" : "pertle" },
+
+  "itemTags" : [ "bug" ],
+
+  "inventoryIcon" : "pertleicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "pertle.png:<color>.<frame>",
+      "imagePosition" : [-1, 0],
+      "frames" : 27,
+      "animationCycle" : 2.3,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ]
+}

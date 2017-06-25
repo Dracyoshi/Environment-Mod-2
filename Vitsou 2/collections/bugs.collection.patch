@@ -1,0 +1,12 @@
+[
+  {
+    "op" : "add",
+    "path" : "/collectables/pertle",
+    "value" : { "order" : 43, "item" : "pertle" }
+  },
+  {
+    "op" : "add",
+    "path" : "/collectables/conifly",
+    "value" : { "order" : 44, "item" : "conifly" }
+  }
+]

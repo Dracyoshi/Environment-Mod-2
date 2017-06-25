@@ -1,0 +1,40 @@
+[
+  {
+    "op" : "add",
+    "path" : "/",
+    "value" : {
+	    "name" : "pertle",
+
+	    "spawnParameters" : {
+	      "area" : "air",
+	      "region" : "exposed",
+	      "time" : "all"
+	    },
+
+	    "spawnChance" : 0.001,
+	    "monsterType" : "pertle",
+	    "monsterParameters" : {
+	      "aggressive" : false
+	    }
+	  }
+	},
+	{
+    "op" : "add",
+    "path" : "/",
+    "value" : {
+	    "name" : "conifly",
+
+	    "spawnParameters" : {
+	      "area" : "air",
+	      "region" : "exposed",
+	      "time" : "all"
+	    },
+
+	    "spawnChance" : 0.001,
+	    "monsterType" : "conifly",
+	    "monsterParameters" : {
+	      "aggressive" : false
+	    }
+	  }
+	}
+]
