@@ -1,0 +1,130 @@
+{
+	"name" : "v-moon-volcanic",
+	"friendlyName" : "Volcanic Moon",
+
+	"spawnProfile" : {
+    "groups" : []
+  },
+
+//---------------------------------------------------------------------------------------------------------------------------------------
+//Basic Settings
+//---------------------------------------------------------------------------------------------------------------------------------------
+  "hueShiftOptions" : [0],
+	"mainBlock" : "obsidian",
+  "subBlocks" : [ "moonrock", "magmarock" ],
+  "ores" : "moon",
+
+//---------------------------------------------------------------------------------------------------------------------------------------
+//Surface Placeables
+//---------------------------------------------------------------------------------------------------------------------------------------
+  "surfacePlaceables" : {
+		"grassMod" : [ "blackash" ],
+		"grassModDensity" : 0.5,
+
+    "items" : [
+//------TREASURE-------------------------------------------------------------------------------------------------------------------------
+      {
+        "mode" : "floor",
+        "priority" : 1,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:overgroundRareChests",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [1, "statuspod" ] ],
+            "parameters" : { }
+          }
+        ]
+      },
+///-----FLORA-----------------------------------------------------------------------------------------------------------------------------
+			{
+				"mode" : "floor",
+				"priority" : 1.0,
+				"variants" : 1,
+				"distribution" : "/biomes/distributions.config:scatteredLarge",
+
+				"type" : "object",
+				"objectSets" : [
+					{
+						"pool" : [ [0.35, "smokegen" ] ],
+						"parameters" : { }
+					}
+				]
+			},
+			{
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:surfaceCapsules",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [0.35, "capsulesmall" ], [0.35, "capsulemed" ], [0.35, "capsulebig" ] ],
+            "parameters" : { }
+          }
+        ]
+      },
+///-----MICRODUNGEONS-----------------------------------------------------------------------------------------------------------------
+      {
+        "mode" : "floor",
+        "priority" : 3.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:tiyDist",
+
+        "type" : "microdungeon",
+        "microdungeons" : [ "block1platforms", "loops", "spiralspikes", "blocks", "stripeblocks", "blockpile", "reversepyramids", "flats", "spikes", "rods", "wiggles", "rockyshapes", "layeredspire", "blank", "none" ]
+      },
+			{
+        "mode" : "floor",
+        "priority" : 3.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:tiyDistTerrainfeatures",
+
+        "type" : "microdungeon",
+        "microdungeons" : [ "terrainfeatures" ]
+      }
+    ]
+  },
+
+//---------------------------------------------------------------------------------------------------------------------------------------
+//Underground Placeables
+//---------------------------------------------------------------------------------------------------------------------------------------
+  "undergroundPlaceables" : {
+    "grassMod" : [ "blackash" ],
+    "grassModDensity" : 0.2,
+
+    "items" : [
+//------TREASURE-------------------------------------------------------------------------------------------------------------------------
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:undergroundChests",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [1, "statuspod" ] ],
+            "parameters" : { }
+          }
+        ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:undergroundCapsules",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [0.35, "capsulesmall" ], [0.35, "capsulemed" ], [0.35, "capsulebig" ] ],
+            "parameters" : { }
+          }
+        ]
+      }
+    ]
+  }
+}
